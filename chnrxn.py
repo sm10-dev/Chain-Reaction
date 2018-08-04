@@ -18,7 +18,7 @@ def chain_reaction(win, x, y):
             cur.owner = win.player
             cur.orb = 1
             cur.draw()
-        #Case : Grid is owned by current player
+        #Case : Grid is not empty
         else:
             if cur.owner != win.player:
                 win.owned[cur.owner] -= 1
